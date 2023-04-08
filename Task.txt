@@ -1,0 +1,30 @@
+Hello!  
+Your requirement  
+http://192.168.1.1/test?person=Sonya&image=sonya.jpg
+and if its some one it dont know it will be like
+http://192.168.1.1/test?person=unknown&image=CAMNAME-YYMMDDHHMMSS.jpg
+Where CAMNAME is senders email example (cam1@email.com) so it would look like
+http://192.168.1.1/test?person=unknown&image=cam1-2303311200.jpg
+	|
+	|
+    My Course
+1.I start SMTP server (http://192.168.104.11:1025)
+2.I send email with sonya's photo From Client.
+  Get Ok message from server.
+3.Then If I don't know,save eml like person = unknown image = CAMNAME(sender)-YYMMDDHHMMSS.jpg
+  in my case,
+        sender = 'sender@example.com'
+	recipient = 'recipient@example.com'
+	file_location = 'Sonya.png'
+  if I know him, print "I know him"
+	|
+	|
+    My Answer
+1.There are two men in my image_database(ru2.png,ru3.png),They are not Sonya.
+2.In server, server get request and if I don't know,save that in images and save smtp request to emls   directory.
+3.server don't know Sonya so a new file are made.Before start, I don't have any file.
+  If I know him, only print "I know him"   
+# I doubt that I understand rightly your requirement.
+# Anyway,I solved problems as much as I understand.
+
+The end.
